@@ -2,6 +2,7 @@ package com.jxareas.konnect.repository;
 
 import com.jxareas.konnect.data.FakeUserData;
 import com.jxareas.konnect.model.User;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -10,7 +11,7 @@ import java.util.List;
  */
 public class UserRepositoryImpl implements UserRepository {
     
-    private List<User> userList = FakeUserData.fakeUsers;
+    private static List<User> userList = new ArrayList<>(FakeUserData.fakeUsers);
 
     @Override
     public List<User> getAll() {
@@ -30,9 +31,9 @@ public class UserRepositoryImpl implements UserRepository {
 
     @Override
     public boolean exists(User user) {
-        return userList.stream()
-                .anyMatch(currentUser -> currentUser.equals(user));
-                
+        userList.stream()
+                .forEach(System.out::println);
+        return true;               
     }
 
     @Override
