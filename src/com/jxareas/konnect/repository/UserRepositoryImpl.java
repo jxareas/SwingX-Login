@@ -31,14 +31,8 @@ public class UserRepositoryImpl implements UserRepository {
 
     @Override
     public boolean exists(User user) {
-        userList.stream()
-                .forEach(System.out::println);
-        return true;               
-    }
-
-    @Override
-    public void update(User user) {
-     
+        return userList.stream()
+                .anyMatch(currentUser -> currentUser.equals(user));
     }
 
     @Override
