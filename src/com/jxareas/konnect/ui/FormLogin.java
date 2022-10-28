@@ -34,11 +34,11 @@ public class FormLogin extends javax.swing.JFrame {
         textfieldUsername = new javax.swing.JTextField();
         labelPassword = new javax.swing.JLabel();
         separatorPassword = new javax.swing.JSeparator();
-        jButton1 = new javax.swing.JButton();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        buttonRegister = new javax.swing.JButton();
+        passwordField = new javax.swing.JPasswordField();
         buttonClose = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        buttonLogin = new javax.swing.JButton();
+        labelDisclaimer = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setName("frameLogin"); // NOI18N
@@ -78,16 +78,16 @@ public class FormLogin extends javax.swing.JFrame {
         separatorPassword.setForeground(new java.awt.Color(51, 51, 51));
         panelBackground.add(separatorPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 290, 330, 20));
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 254));
-        jButton1.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
-        jButton1.setText("Regístrate");
-        jButton1.setBorder(null);
-        jButton1.setFocusable(false);
-        panelBackground.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 360, 330, 30));
+        buttonRegister.setBackground(new java.awt.Color(255, 255, 254));
+        buttonRegister.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
+        buttonRegister.setText("Regístrate");
+        buttonRegister.setBorder(null);
+        buttonRegister.setFocusable(false);
+        panelBackground.add(buttonRegister, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 360, 330, 30));
 
-        jPasswordField1.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
-        jPasswordField1.setBorder(null);
-        panelBackground.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 260, 330, 30));
+        passwordField.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        passwordField.setBorder(null);
+        panelBackground.add(passwordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 260, 330, 30));
 
         buttonClose.setBackground(new java.awt.Color(255, 255, 254));
         buttonClose.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
@@ -101,18 +101,18 @@ public class FormLogin extends javax.swing.JFrame {
         });
         panelBackground.add(buttonClose, new org.netbeans.lib.awtextra.AbsoluteConstraints(705, 0, 100, 50));
 
-        jButton2.setBackground(new java.awt.Color(0, 0, 0));
-        jButton2.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setText("Inicia sesión");
-        jButton2.setBorder(null);
-        jButton2.setFocusable(false);
-        panelBackground.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 320, 330, 30));
+        buttonLogin.setBackground(new java.awt.Color(0, 0, 0));
+        buttonLogin.setFont(new java.awt.Font("Roboto Medium", 0, 14)); // NOI18N
+        buttonLogin.setForeground(new java.awt.Color(255, 255, 255));
+        buttonLogin.setText("Inicia sesión");
+        buttonLogin.setBorder(null);
+        buttonLogin.setFocusable(false);
+        panelBackground.add(buttonLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 320, 330, 30));
 
-        jLabel1.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("© 2022 Konnect. Todos los derechos reservados.");
-        panelBackground.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 470, 420, -1));
+        labelDisclaimer.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        labelDisclaimer.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        labelDisclaimer.setText("© 2022 Konnect. Todos los derechos reservados.");
+        panelBackground.add(labelDisclaimer, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 470, 420, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -170,15 +170,15 @@ public class FormLogin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel backgroundGradient;
     private javax.swing.JButton buttonClose;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JButton buttonLogin;
+    private javax.swing.JButton buttonRegister;
+    private javax.swing.JLabel labelDisclaimer;
     private javax.swing.JLabel labelLogin;
     private javax.swing.JLabel labelPassword;
     private javax.swing.JLabel labelUsername;
     private javax.swing.JLabel logo;
     private javax.swing.JPanel panelBackground;
+    private javax.swing.JPasswordField passwordField;
     private javax.swing.JSeparator separatorPassword;
     private javax.swing.JSeparator separatorUsername;
     private javax.swing.JTextField textfieldUsername;
